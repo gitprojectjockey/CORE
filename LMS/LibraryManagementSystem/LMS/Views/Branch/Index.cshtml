@@ -1,0 +1,28 @@
+﻿@model LMS.ViewModels.Branch.BranchIndexViewModel
+@{
+    ViewData["Title"] = "Library Branch Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="header clearfix detailHeading">
+        <h2 class="text-muted">Library Branch Index</h2>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <table class="table">
+        @foreach (var item in Model.Branches)
+        {
+            <tr>
+                <td>
+                    @item.BranchName
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-info" role="button" asp-controller="Branch" asp-action="Detail" asp-route-branchId="@item.Id">View Library Branch Details</a>
+                </td>
+
+            </tr>
+        }
+    </table>
+</div>

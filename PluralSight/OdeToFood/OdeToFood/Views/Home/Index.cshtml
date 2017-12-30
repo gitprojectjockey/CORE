@@ -1,0 +1,21 @@
+﻿@model OdeToFood.ViewModels.HomePageViewModel
+@{
+    ViewBag.Title = "Home";
+}
+<!DOCTYPE html>
+
+<h1>Welcome!</h1>
+<div>
+    <!--This is example of the new tag helpers in AspCore-->
+    <!--You can use this syntax rather then the HtmlHelper.ActionLink etc...-->
+
+    @foreach (var r in Model.Restaurants)
+    {
+        @Html.Partial("_Summary",r)
+    }
+    <br>
+    <div>
+        <a asp-action="Create" asp-controller="Home">Create</a>
+    </div>
+    <br />
+</div>

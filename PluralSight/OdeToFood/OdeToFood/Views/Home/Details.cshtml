@@ -1,0 +1,15 @@
+﻿
+@model OdeToFood.Entities.Restaurant
+
+@{
+    ViewBag.Title = Model.Name;
+}
+<div>
+    <h1>@Model.Name</h1>
+    @if (Model.Cuisine != CuisineType.None)
+    {
+        <h3>@Model.Cuisine</h3>
+    }
+    @Html.ActionLink("Home", "Index", "Home")
+</div>
+
