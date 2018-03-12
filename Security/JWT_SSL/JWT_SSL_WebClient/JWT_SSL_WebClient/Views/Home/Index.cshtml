@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Sample SSL Web Client App Calling WebAPI Secured Via JWT</h2>
+        <text>
+            <h4>Developing Locally with HTTPS, Self-Signed Certificates and ASP.NET Core</h4>
+        </text>
+    </div>
+
+    @*this is an html helper - it creates an object that implements idisposable*@
+    @using (Html.BeginForm("GetBooksAsync", "Home", FormMethod.Post))
+    {
+        <div>
+            <button type="submit" class="btn btn-success btn-lg">Get Books</button>
+        </div>
+    }
+
+
+</div>

@@ -26,7 +26,7 @@ namespace LMS.Services
                 _mapper.Configure();
         }
 
-        public async Task<PatronDto> GetAsync(int id)
+        public  async Task<PatronDto> GetAsync(int id)
         {
             IEnumerable<Patron> patrons = await _unitOfWork.PatronRepository.GetAsync(p => p.Id == id, p => p.OrderBy(ob => ob.LastName), Regex.Replace("HomeLibraryBranch, LibraryCard", @"\s", string.Empty));
             Patron patron = patrons.FirstOrDefault();

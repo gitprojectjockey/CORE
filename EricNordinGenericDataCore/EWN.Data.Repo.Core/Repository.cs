@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EWN.Data.Repo.Core
 {
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class, new()
+    public  class Repository<TEntity> : IRepository<TEntity> where TEntity : class, new()
     {
         private readonly DbContext _context;
         private DbSet<TEntity> dbSet;

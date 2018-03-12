@@ -1,0 +1,22 @@
+﻿
+REGISTER
+
+http://localhost:52549/API/Register
+Content-Type: application/json
+
+{
+	"username": "enordin", 
+	"password": "Wr400fg!",
+	"ConfirmPassword": "Wr400fg!",
+	"Email": "enordin@comcast.com", 
+	"Age":"46"
+}
+
+
+LOGIN
+http://localhost:52549/API/Login
+Content-Type: application/json
+{
+	"username": "enordin", 
+	"password": "Wr400fg!"
+}

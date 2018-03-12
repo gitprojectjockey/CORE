@@ -1,0 +1,30 @@
+﻿
+REGISTER
+
+http://localhost:52549/API/security/Register
+Content-Type: application/json
+
+{
+	"username": "enordin", 
+	"password": "Wr400fg!",
+	"ConfirmPassword": "Wr400fg!",
+	"Email": "enordin@comcast.com", 
+	"Age":"46",
+    "District":"South.West"
+}
+
+
+LOGIN
+http://localhost:52549/API/security/Login
+Content-Type: application/json
+
+{
+	"username": "enordin", 
+	"password": "Wr400fg!",
+    "email":"enordin@comcast.com"
+}
+
+http://localhost:52549/API/ZipCode/Get
+
+
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVub3JkaW5AY29tY2FzdC5jb20iLCJzdWIiOiJlbm9yZGluIiwidXNlci5zYWxlcy5yZWdpb24iOiJTb3V0aC5XZXN0IiwianRpIjoiNmE3NWFjNzUtM2YxMi00ODcyLTgwZjktMzg2MzQ2ZDFjNDliIiwiZXhwIjoxNTIwMjk4NjAxLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQ5OTI4LyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDk5MjgvIn0.BoWtDO9VRZMRu39faZd0SU64cy9ba1nzQLoJ8xOcPc0

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="lib/bootstrap/dist/css/bootstrap-slate.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/fonts/font-awesome.min.css" rel="stylesheet" />
+
+    <title>Login</title>
+    <meta charset="utf-8" />
+</head>
+<body style="padding-top:20px">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="well">
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="success">
+                        <td>
+                            <h4>Existing User Login</h4>
+                        </td>
+                        <td colspan="2">
+                            <a class="btn btn-success pull-right" href="Register.html">Register</a>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Username
+                        </td>
+                        <td>
+                            <input type="text" id="txtUsername" placeholder="Username" value="ewnordin@comcast.net" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password
+                        </td>
+                        <td>
+                            <input type="password" id="txtPassword" placeholder="Password" value="Wr400fg!" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" id="btnLogin" value="Login" class="btn btn-success" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a id="btnGoogleLogin" href="#" target="_blank">
+                                <h4 class="fa fa-google-plus my-btn"> Social Login</h4>
+                            </a>
+                            <h5>Login using your google account credentials.</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a id="btnFacebookLogin" href="#" target="_blank">
+                                <h4 class="fa fa-facebook my-btn"> Social Login</h4>
+                            </a>
+                            <h5>Login using your Facebook account credentials.</h5>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="validationError" class="alert alert-danger collapse">
+                <a id="linkCollapseValidationError" class="close" href="#">&times;</a>
+                <div id="errorMessage"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <script src="/js/site.js" asp-append-version="true"></script>
+
+    <!--<script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>-->
+    <!--<script src="../Scripts/jquery-3.1.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/productServiceExecuteMode.js"></script>
+    <script src="../Scripts/productAuthService.js"></script>
+    <script src="../Scripts/productGoogleAuthService.js"></script>
+    <script src="../Scripts/productFacebookAuthService.js"></script>-->
+</body>
+</html>
+

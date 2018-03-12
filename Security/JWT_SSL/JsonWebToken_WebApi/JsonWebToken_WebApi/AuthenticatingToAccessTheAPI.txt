@@ -1,0 +1,20 @@
+﻿Get a JWT by making an HTTP POST request to /api/token endpoint and passing the following JSON in the request body:
+
+http://localhost:49928/API/Token
+Content-Type: application/json
+{"username": "enordin", "password": "Wr400fg!"}
+
+
+
+
+Then place token in header...
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNYXJpbyBSb3NzaSIsImVtYWlsIjoibWFyaW8ucm9zc2lAZG9tYWluLmNvbSIsImJpcnRoZGF0ZSI6IjE5ODMtMDktMjMiLCJqdGkiOiJmZjQ0YmVjOC03ZDBkLTQ3ZTEtOWJjZC03MTY4NmQ5Nzk3NzkiLCJleHAiOjE1MTIzMjIxNjgsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjM5MzkvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MzkzOS8ifQ.9qyvnhDna3gEiGcd_ngsXZisciNOy55RjBP4ENSGfYI
+And call...
+
+http://localhost:49928/API/Books
+
+
+
+Handling JWT Claims on ASP.NET Core 2.0
+Call Books From Controller
+Call Books From JQuery

@@ -1,0 +1,27 @@
+South.East
+DE, MD, VA, WV, NC, SC, GA, FL, LA, KY, MS, AL, AK, TN
+
+North.East 
+VT, MA, PA, NJ, NY, CT, ME, RI, NH
+
+South.West
+AZ, NM, OK, TX
+
+Mid.West
+ND, SD, MN, NE, KS, IA, IL, WI, MI, IN, OH, MO
+
+
+Pacific 
+WA, OR, CA
+
+RockyMountains 
+CO, WY, MT, ID, NV, UT 
+
+
+Non.Contiguous
+AK, HI
+
+
+
+
+

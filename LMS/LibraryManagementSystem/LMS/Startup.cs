@@ -2,6 +2,8 @@
 using LibraryServices.Concrete;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Rewrite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,8 +26,10 @@ namespace LMS
         {
             services.AddMvc();
             services.AddDbContext<LibraryData.LibraryContext>(
+
+
                 options => options.UseSqlServer(Configuration.GetConnectionString("LibraryConnection")));
-            services.AddSingleton(Configuration);
+          
 
             services.AddSingleton(Configuration);
             services.AddScoped<ILibraryAsset, LibraryAssetService>();
@@ -49,6 +53,9 @@ namespace LMS
             }
 
             app.UseStaticFiles();
+
+            var options = new RewriteOptions().AddRedirectToHttps(StatusCodes.Status301MovedPermanently, 63423);
+            app.UseRewriter(options);
 
             app.UseMvc(routes =>
             {

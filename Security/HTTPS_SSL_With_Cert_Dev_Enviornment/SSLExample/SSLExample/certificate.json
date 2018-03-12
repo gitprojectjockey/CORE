@@ -1,0 +1,6 @@
+﻿{
+  "certificateSettings": {
+    "fileName": "mySelfSignedCert.pfx",
+    "password": "P@ssw0rd"
+  }
+}
